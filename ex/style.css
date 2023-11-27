@@ -71,6 +71,10 @@ main h4{
     margin: 0px;
     text-align: center;
 }
+main h5{
+    font-size: 20px;
+    color:  #A68C5D;
+}
 main p{
     text-align: justify;
     text-indent: 40px;
