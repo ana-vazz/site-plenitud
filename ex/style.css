@@ -14,17 +14,27 @@ header>nav{
     margin: auto;
     display: flex;
     justify-content: flex-start;
-    flex-direction: row;
+    gap: 1rem;
 }
-header a{
+header nav a{
     text-decoration: none;
     color: white;
-     margin: 0px 0px 5px 0px;
-    padding: 10px;
+    margin: 0px 0px 5px 0px;
+    padding: 1rem;
     border-radius: 5px;
     transition-duration: 0.5s;
     text-decoration: none;
     font-size: 14px;
+    width: 100%;
+    max-width: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+header nav a.logo:hover{
+background-color: unset;
+color: unset;
+
 }
 
 header a:hover{
@@ -38,8 +48,7 @@ main{
     background-color: white;
      min-width: 300px;
      max-width: 1200px;
-     margin: auto;
-     padding: 10px;
+     margin: 0 2rem;
      margin-bottom: 30px;;
      font-family: "Montserrat";
      @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,300;0,400;0,500;0,600;0,800;1,100;1,300;1,400;1,500;1,800&display=swap');
@@ -49,7 +58,15 @@ main{
 main>nav{
     text-align: center;
     margin-bottom: 30px;
-    max-width: 660x;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-evenly;
+
+}
+main nav a{
+    margin: 0px;
+    padding: 1rem;
 }
 main h1{
     text-align: center;
@@ -79,11 +96,11 @@ main p{
     text-align: justify;
     text-indent: 40px;
     font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
 }
 main a{
     text-decoration: none;
     color: black;
-    margin-right: 30px;
     font-family: "Montserrat";
     @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,300;0,400;0,500;0,600;0,800;1,100;1,300;1,400;1,500;1,800&display=swap');
     font-size: 20px;
@@ -100,12 +117,20 @@ main img.pequena {
 }
 
 article{
-    columns: 2;
-    display: block;
-    margin-top: 30px;
-    margin-bottom: 30px;
-    margin-left: 10px;
-    
+    display: flex;
+    flex-direction:row;
+    gap: 1rem;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 1rem;
+    margin-bottom: 4rem;
+    width: 100%;
+}
+article div{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
 }
 
 aside>a{
@@ -114,4 +139,31 @@ aside>a{
 }
 main img {
     width: 100%;
+    border-radius: 0.5rem;
+    max-width: 34rem;
+}
+.banner {
+    max-width: 100%;
+    margin-bottom: 2rem;
+}
+
+@media screen and (max-width: 770px) {
+    nav{
+        flex-direction: column;
+        align-items: center;
+        gap: none;
+    }
+    header nav{
+        gap: unset;
+        padding-bottom: 0;
+    }
+    header nav a{
+        max-width: none;
+    }
+    article{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
 }
