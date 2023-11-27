@@ -12,6 +12,9 @@ header>nav{
     background-color: rgb(44, 43, 43);
     padding: 13px 10px 10px 10px;
     margin: auto;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row;
 }
 header a{
     text-decoration: none;
