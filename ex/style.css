@@ -104,7 +104,7 @@ main h5 {
     font-size: 20px;
     color: #A68C5D;
     margin-top: 16px;
-    margin-bottom: 0px;
+    margin-bottom: 16px;
 }
 
 main p {
@@ -177,6 +177,7 @@ div p {
     display: block;
     border: solid black;
 }
+
 
 @media screen and (max-width: 770px) {
     nav {
