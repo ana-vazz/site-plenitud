@@ -52,7 +52,6 @@ header img {
 main {
     background-color: white;
     min-width: 300px;
-    max-width: 1200px;
     margin: 0 2rem;
     margin-bottom: 30px;
     ;
@@ -80,6 +79,7 @@ main h1 {
     text-align: center;
 
     font-size: 2.5rem;
+    ;
 }
 
 main h2 {
@@ -103,6 +103,7 @@ main h4 {
 main h5 {
     font-size: 20px;
     color: #A68C5D;
+    margin: 0px;
 }
 
 main p {
