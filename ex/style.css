@@ -184,6 +184,10 @@ main img {
     background-color: white;
     color: #A68C5D;
 }
+.botao{
+    display: block;
+    border: solid black;
+}
 
 @media screen and (max-width: 770px) {
     nav {
