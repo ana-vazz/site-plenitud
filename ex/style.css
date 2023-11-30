@@ -179,6 +179,7 @@ main img {
     border-radius: 0.5rem;
     max-width: 34rem;
     max-height: 15rem;
+    object-fit: cover;
 }
 
 main.main_home img {
@@ -192,6 +193,7 @@ div p {
 .banner {
     max-width: 100%;
     margin-bottom: 2rem;
+    object-fit: cover;
 }
 
 .botao {
