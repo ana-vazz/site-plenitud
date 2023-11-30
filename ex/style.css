@@ -16,6 +16,7 @@ header>nav {
     display: flex;
     justify-content: flex-start;
     gap: 1rem;
+    flex-wrap: wrap;
 }
 
 header nav a {
@@ -54,7 +55,8 @@ main {
     min-width: 300px;
     margin: 0 2rem;
     margin-bottom: 30px;
-    ;
+    margin-top: 2rem;
+    border-radius: 0.5rem;
     font-family: "Montserrat";
     @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,300;0,400;0,500;0,600;0,800;1,100;1,300;1,400;1,500;1,800&display=swap');
 }
@@ -106,7 +108,10 @@ main h5 {
     margin-top: 16px;
     margin-bottom: 16px;
 }
-
+main h6{
+    font-size: 1.3rem
+    ;
+}
 main p {
     text-align: justify;
     text-indent: 40px;
@@ -134,7 +139,16 @@ main img.pequena {
     display: block;
     margin: auto;
 }
-
+main.regulamento  {
+    margin: 0 10%;
+}
+main.regulamento article{
+  display: flex;
+    flex-direction: column;
+    margin: 2px;
+  
+}
+    
 article {
     display: flex;
     flex-direction: row;
@@ -144,6 +158,8 @@ article {
     margin-top: 1rem;
     margin-bottom: 4rem;
     width: 100%;
+    padding: 1rem 0;
+    border-radius: 0.5rem;
 }
 
 article div {
@@ -162,6 +178,11 @@ main img {
     width: 100%;
     border-radius: 0.5rem;
     max-width: 34rem;
+    max-height: 15rem;
+}
+
+main.main_home img {
+    border-radius: 0.5rem;
 }
 div p {
     margin-right: 30px;
@@ -173,9 +194,20 @@ div p {
     margin-bottom: 2rem;
 }
 
-.botao{
+.botao {
     display: block;
-    border: solid black;
+    padding: 1rem 1.5rem;
+    border-radius: 0.5rem;
+    text-decoration: none;
+    border: none;
+    background-color: #2C2B2B;
+    color: white;
+    transition: 0.2s;
+}
+.botao:hover {
+    transform: scale(1.1);
+    background-color:#3F3D3D;
+    transition: 0.2s;
 }
 
 
@@ -200,5 +232,8 @@ div p {
         justify-content: center;
         flex-direction: column;
         align-items: center;
+    }
+    main.regulamento{
+        margin: 0 5%;
     }
 }
